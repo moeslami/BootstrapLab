@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/united-bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="page">
+        <header class="container">
+            <div id="mainMenu" class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button class="btn btn-sm btn-success navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <div id="logo">
+                        <h3 class="badge"><a href="index.html">Bootstrap Lab</a></h3>
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html" class="nav">Home</a></li>
+                        <li><a href="about.html" class="nav">About</a></li>
+                        <li><a href="contact.html" class="nav active">Contact</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </header>
+
+        <section id="body" class="container">
+            <div class="page-header">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Contact</li>
+                </ol>
+                <h1>Contact us</h1>
+            </div>
+            <p class="text-warning">This is just a sample and doesn't really work :)</p>
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="nameInput" class="control-label col-md-2">Your name</label>
+                        <div class="col-md-10">
+                            <input type="text" name="nameInput" class="form-control" placeholder="Enter your name here..." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput" class="control-label col-md-2">Email</label>
+                        <div class="col-md-10">
+                            <input type="text" name="emailInput" class="form-control" placeholder="Your email here..." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2">Priority</label>
+                        <div class="col-md-10">
+                            <div class="btn-group btn-group-sm" data-toggle="buttons">
+                                <label class="btn btn-success">
+                                    <input type="radio" />Low</label>
+                                <label class="btn btn-success">
+                                    <input type="radio" />Medium</label>
+                                <label class="btn btn-success">
+                                    <input type="radio" />High</label>
+
+                                <div class="btn-group btn-group-sm">
+                                    <button class="btn btn-success">Other</button>
+                                    <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" tabindex="-1">Trivial</a></li>
+                                        <li><a href="#" tabindex="-1">Critical</a></li>
+                                        <li><a href="#" tabindex="-1">Not Important</a></li>
+                                        <li class="divider"></li>
+                                        <li class="disabled"><a href="#" tabindex="-1">Specify your own...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reasonInput" class="control-label col-md-2">Reason</label>
+                        <div class="col-md-10">
+                            <!--<select name="reasonInput" class="form-control">
+                                    <option>Question</option>
+                                    <option>Technical problem</option>
+                                    <option>Sales</option>
+                                    <option>Policies</option>
+                                </select>-->
+
+                            <div class="dropdown">
+                                <div class="btn-group">
+                                    <button class="btn btn-success" id="pickButton">Choose one...</button>
+                                    <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span></button>
+
+                                    <ul class="dropdown-menu" id="reasonDropdown">
+                                        <li><a href="#" tabindex="-1">Question</a></li>
+                                        <li><a href="#" tabindex="-1">Technical problem</a></li>
+                                        <li><a href="#" tabindex="-1">Sales</a></li>
+                                        <li><a href="#" tabindex="-1">Policies</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput" class="control-label col-md-2">Message</label>
+                        <div class="col-md-10">
+                            <textarea name="messageInput" class="form-control" cols="40" rows="6" placeholder="Enter your message here..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-md-offset-2">
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <h3>Our Address:</h3>
+            <div>
+                <address>
+                    1234 First St.
+                    <br />
+                    Washington, DC, 21234<br />
+                    <abbr title="phone">P:</abbr>
+                    443-123-4567
+                </address>
+                <address>
+                    <strong>Support:</strong>
+                    <a href="mailto:myemail@somedomain.com">mailto:myemail@somedomain.com</a>
+                    <br />
+                    <strong>Marketting:</strong>
+                    <a href="mailto:myemail@somedomain.com">mailto:myemail@somedomain.com</a>
+                    <br />
+                </address>
+            </div>
+
+        </section>
+
+
+        <hr />
+        <footer class="container">
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                <div class="navbar-nav col-sm-10 col-sm-offset-2">
+                    Samples made by Mohammad Eslami (<a href="http://mohammadeslami.com">http://mohammadeslami.com</a>)
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="Scripts/jquery-2.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/site.js"></script>
+</body>
+</html>
